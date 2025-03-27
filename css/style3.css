@@ -1,0 +1,63 @@
+/* 전체 화면을 가로로 채우는 설정 */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+
+/* 게임 컨테이너 (가로 레이아웃) */
+.game-container {
+  position: relative;
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 중앙 테이블 */
+.table {
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 플레이어 위치 지정 */
+.player {
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.top { top: 10px; left: 50%; transform: translateX(-50%); }
+.bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.left { left: 10px; top: 50%; transform: translateY(-50%); }
+.right { right: 10px; top: 50%; transform: translateY(-50%); }
+
+@media screen and (max-width: 768px) {
+  body {
+      transform: rotate(90deg);
+      transform-origin: center;
+      width: 100vh;
+      height: 100vw;
+      overflow: hidden;
+      position: fixed;
+  }
+}
