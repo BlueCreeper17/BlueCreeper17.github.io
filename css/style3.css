@@ -72,7 +72,7 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #ffffff;
-  background-image: url(../images/hero-bg3.gif);
+  background-image: url(../images/hero-bg3.gif)no-repeat center center fixed;
   background-size: cover;
   background-position: center; /* 배경 이미지 중앙 정렬 */
   background-repeat: no-repeat; /* 이미지 반복 방지 */
