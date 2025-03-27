@@ -1,0 +1,78 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.layout_padding {
+  padding: 75px 0;
+}
+
+.layout_padding2 {
+  padding: 45px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 75px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 75px;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.heading_container h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 10px; /* 제목 폰트 크기 줄이기 */
+  font-weight: bold; /* 글자 두께 */
+  padding: 10px 20px; /* 제목 주변 여백 */
+}
+
+.heading_container h2::before,
+.heading_container h2::after {
+  content: "";
+  position: absolute;
+  width: 10px; /* 선 길이 조정 (기존 50px → 30px로 줄임) */
+  height: 10px; /* 선 두께 */
+  background-color: black; /* 선 색상 */
+  top: 50%; /* 중앙 정렬 */
+  transform: translateY(-50%);
+}
+
+.heading_container h2::before {
+  left: -35px; /* 제목과 선 사이 간격 조정 */
+}
+
+.heading_container h2::after {
+  right: -35px;
+}
+
+/*header section*/
+.hero_area {
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url(../images/hero-bg3.gif);
+  background-size: cover;
+}
+
