@@ -2,11 +2,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000000;
   background-color: #ffffff;
-  background-image: url(../images/hero-bg2.gif); /* 배경 이미지 */
-  background-size: cover; /* 화면 크기에 맞춰 조정 */
-  background-position: center; /* 배경 이미지 중앙 정렬 */
-  background-repeat: no-repeat; /* 이미지 반복 방지 */
-  background-attachment: fixed; /* 스크롤 시 배경 고정 */
 }
 
 .layout_padding {
@@ -79,6 +74,9 @@ body {
   background-color: #ffffff;
   background-image: url(../images/hero-bg2.gif);
   background-size: cover;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  background-attachment: fixed; /* 스크롤 시 배경 고정 */
 }
 
 .sub_page .hero_area {
