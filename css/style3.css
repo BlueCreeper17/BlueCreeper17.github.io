@@ -79,3 +79,15 @@ body {
   background-attachment: fixed; /* 스크롤 시 배경 고정 */
 }
 
+.swiper {
+    width: 300px;  /* 슬라이드 컨테이너 크기 */
+    height: 400px; /* 슬라이드 컨테이너 높이 */
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 가로 중앙 정렬 */
+    justify-content: center; /* 세로 중앙 정렬 */
+    text-align: center;
+}
