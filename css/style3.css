@@ -1,0 +1,77 @@
+/* 기존 body 스타일 유지 */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* 기존 hero_area 배경 */
+.hero_area {
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url(../images/hero-bg3.gif);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* 기존 swiper 슬라이드 컨테이너 */
+.swiper {
+    width: 600px;  /* 슬라이드 컨테이너 크기 */
+    height: 900px; /* 슬라이드 컨테이너 높이 */
+    margin-top: -30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ✅ 가로 모드 강제 적용 (배경 & 슬라이드 컨테이너) */
+@media screen and (max-width: 768px) {
+    .hero_area {
+        transform: rotate(90deg);
+        transform-origin: center;
+        width: 100vh;
+        height: 100vw;
+    }
+
+    .swiper {
+        transform: rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+      transform: rotate(90deg);
+      width: 100vh;
+      height: 100vw;
+
+      /* 📌 모바일에서는 슬라이더를 위로 이동 */
+      position: relative;
+      top: -50px; /* 원하는 만큼 조절 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_area {
+      background-position: top center; /* 상단 중앙 정렬 */
+      /* 다른 위치 예시 */
+      /* background-position: bottom center;  아래 정렬 */
+      /* background-position: left center;  왼쪽 정렬 */
+      /* background-position: right center;  오른쪽 정렬 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_area {
+      transform: rotate(90deg);
+      transform-origin: center;
+      width: 100vh;
+      height: 100vw;
+  }
+
+  .swiper {
+      transform: rotate(90deg);
+      width: 100vh;
+      height: 100vw;
+  }
+}
